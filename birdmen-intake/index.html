@@ -11,13 +11,11 @@
 <link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48" />
 <link rel="stylesheet" href="/styles.css" />
 <style>
-  iframe {
+  iframe.tally-embed {
+    display: block;
     width: 100%;
-    height: 80vh;
-    min-height: 700px;
     border: none;
-    border-radius: 6px;
-    background: #fff;
+    background: var(--bg-raised);
   }
 </style>
 </head>
@@ -27,15 +25,18 @@
       <img class="logo" src="/birdmen-logo.png" alt="Birdmen Paragliding" />
       <p class="eyebrow">Step 1 of 2 — Intake &amp; waiver</p>
       <h1 style="font-size:clamp(1.6rem,4vw,2.3rem);">Birdmen Day Guiding</h1>
-      <p class="lede" style="margin:0 auto; max-width:52ch;">Fill this in once — it covers your pilot details, equipment, and liability waiver. On submit, you'll go straight to the calendar to pick your day (or days).</p>
+      <p class="lede" style="margin:0 auto; max-width:52ch;">Fill this in once — it covers your pilot details, equipment, and liability waiver. On submit, Grant will confirm your day (or days) with you directly.</p>
     </div>
     <svg class="ridge" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true">
       <path class="ridge-fill" d="M0,160 L0,95 L150,95 L175,62 L410,62 L435,95 L560,95 L615,24 L665,24 L715,95 L1200,95 L1200,160 Z" />
       <path class="ridge-line" d="M0,95 L150,95 L175,62 L410,62 L435,95 L560,95 L615,24 L665,24 L715,95 L1200,95" />
     </svg>
   </section>
-  <div class="wrap" style="padding-bottom:48px;">
-    <iframe src="https://tally.so/r/xXk1W9" title="Birdmen Guiding Intake & Waiver" loading="lazy"></iframe>
-  </div>
+
+  <iframe class="tally-embed" data-tally-src="https://tally.so/embed/xXk1W9?alignLeft=1&hideTitle=1&dynamicHeight=1" title="Birdmen Guiding Intake & Waiver" loading="lazy"></iframe>
+  <script src="https://tally.so/widgets/embed.js"></script>
+  <script>
+    window.addEventListener('load', function () { if (typeof Tally !== 'undefined') Tally.loadEmbeds(); });
+  </script>
 </body>
 </html>
