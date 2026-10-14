@@ -39,12 +39,12 @@
   .camp-card .details strong { color: var(--text); font-weight: 500; }
   .camp-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
   iframe.camp-embed {
+    display: block;
     width: 100%;
     height: 640px;
     border: none;
-    border-radius: 6px;
     background: var(--bg-raised);
-    margin-bottom: 20px;
+    margin: 0 0 40px;
   }
 </style>
 </head>
@@ -84,9 +84,11 @@
         <li>Capped at <strong>3 pilots</strong>, run by Grant</li>
       </ul>
       <p class="note">A focused week of XC flying and coaching &mdash; small group, built for pilots serious about progressing.</p>
+    </div>
 
-      <iframe class="camp-embed" src="https://cal.com/xc-flow-camp" title="XC Flow Camp" loading="lazy"></iframe>
+    <iframe class="camp-embed" src="https://cal.com/xc-flow-camp" title="XC Flow Camp" loading="lazy"></iframe>
 
+    <div class="wrap camp-card">
       <div class="camp-ctas">
         <a class="cta secondary" href="https://tally.so/r/BzONeA" target="_blank" rel="noopener">Join the Waitlist</a>
       </div>
