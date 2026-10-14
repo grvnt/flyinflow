@@ -99,6 +99,9 @@ h2, .h2 {
 }
 
 section { padding: 56px 0; border-top: 1px solid var(--line); }
+section.no-border { border-top: none; }
+.bg-a { background: var(--bg); }
+.bg-b { background: var(--bg-raised); }
 
 p { color: #cfd3da; margin: 0 0 14px; }
 .lede { color: #d7d2c8; }
@@ -139,25 +142,11 @@ ul.plain li { color: #cfd3da; padding: 4px 0; }
   color: var(--text-dim);
   margin: 0 0 10px;
 }
-.two-col ul { list-style: none; padding: 0; margin: 0; }
-.two-col li {
-  color: #cfd3da;
-  padding: 6px 0;
-  padding-left: 20px;
-  position: relative;
-}
-.two-col .included li::before {
-  content: '';
-  position: absolute; left: 0; top: 14px;
-  width: 7px; height: 7px; border-radius: 50%;
-  background: var(--sunset);
-}
-.two-col .excluded li::before {
-  content: '';
-  position: absolute; left: 0; top: 14px;
-  width: 7px; height: 1.5px;
-  background: var(--text-dim);
-}
+.two-col ul { list-style: none; padding: 0; margin: 0; text-align: center; }
+.two-col li { color: #cfd3da; padding: 6px 0; }
+.two-col .included li::before { content: '+  '; color: var(--sunset); }
+.two-col .excluded li::before { content: '\2013  '; color: var(--text-dim); }
+.two-col .polaroid { margin: 20px auto 0; }
 
 table.rates {
   width: 100%;
