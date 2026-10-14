@@ -208,6 +208,62 @@ a.cta.secondary:hover { border-color: var(--sunset); }
 .links-row a { color: var(--text-dim); text-decoration: none; }
 .links-row a:hover { color: var(--sunset); }
 
+/* polaroid scatter */
+.polaroid-row {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  padding: 8px 0 40px;
+}
+.polaroid {
+  background: #f2f0ea;
+  padding: 10px 10px 32px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+  width: 200px;
+}
+.polaroid img { display: block; width: 100%; height: 150px; object-fit: cover; }
+.polaroid:nth-child(1) { transform: rotate(-4deg); }
+.polaroid:nth-child(2) { transform: rotate(3deg); margin-top: 18px; }
+.polaroid:nth-child(3) { transform: rotate(-2deg); }
+.polaroid:nth-child(4) { transform: rotate(4deg); margin-top: 10px; }
+@media (max-width: 560px) {
+  .polaroid { width: 42%; }
+  .polaroid img { height: 110px; }
+}
+
+/* guide cards */
+.guides {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+@media (max-width: 560px) { .guides { grid-template-columns: 1fr; } }
+.guide-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 2px solid var(--sunset);
+  margin-bottom: 16px;
+}
+.guide-card h3 {
+  font-family: var(--font-display);
+  color: #fff;
+  font-size: 1.15rem;
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0 0 2px;
+}
+.guide-card .role {
+  font-family: var(--font-mono);
+  color: var(--sunset);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  margin: 0 0 12px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
