@@ -28,13 +28,16 @@
     margin: 32px auto;
     display: block;
   }
+  section.camp-section {
+    height: 100vh;
+    padding: 0;
+  }
   iframe.camp-embed {
     display: block;
     width: 100%;
-    height: 640px;
+    height: 100%;
     border: none;
     background: var(--bg-raised);
-    margin: 0 0 40px;
   }
 </style>
 </head>
@@ -65,14 +68,8 @@
     </div>
   </section>
 
-  <section class="bg-b">
+  <section class="bg-b camp-section">
     <iframe class="camp-embed" src="https://cal.com/xc-flow-camp" title="XC Flow Camp" loading="lazy"></iframe>
-
-    <div class="wrap camp-card">
-      <div class="camp-ctas">
-        <a class="cta secondary" href="https://tally.so/r/BzONeA" target="_blank" rel="noopener">Join the Waitlist</a>
-      </div>
-    </div>
   </section>
 
 </body>
