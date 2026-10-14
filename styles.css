@@ -46,7 +46,7 @@ a:focus-visible, button:focus-visible, .cta:focus-visible { outline: 2px solid v
 }
 .hero-photo {
   background-size: cover;
-  background-position: center 65%;
+  background-position: center 35%;
   background-blend-mode: normal;
   padding: 120px 0 0;
 }
