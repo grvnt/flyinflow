@@ -8,7 +8,7 @@
   --sky: #4fb6e8;
   --text: #f2f0ea;
   --text-dim: #8d96a6;
-  --font-display: 'Zodiak', serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
 }
@@ -76,10 +76,10 @@ a:focus-visible, button:focus-visible, .cta:focus-visible { outline: 2px solid v
 }
 h1, .h1 {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 800;
   font-size: clamp(2rem, 5vw, 3.1rem);
   line-height: 1.12;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   margin: 0 0 20px;
   color: var(--text);
 }
@@ -93,7 +93,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: 0.01em;
   text-transform: uppercase;
@@ -242,6 +242,7 @@ a.cta.secondary:hover { border-color: var(--sunset); }
 }
 .guide-card h3 {
   font-family: var(--font-display);
+  font-weight: 700;
   color: #fff;
   font-size: 1.15rem;
   text-transform: none;
