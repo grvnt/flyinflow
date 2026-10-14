@@ -43,7 +43,7 @@
     height: 78vh;
     min-height: 680px;
     border-radius: 6px;
-    background: #fff;
+    background: var(--bg-raised);
     margin-bottom: 20px;
   }
 </style>
@@ -95,11 +95,11 @@
 
         Cal.ns["xc-flow-camp"]("inline", {
           elementOrSelector:"#my-cal-inline-xc-flow-camp",
-          config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+          config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"},
           calLink: "xc-flow-camp",
         });
 
-        Cal.ns["xc-flow-camp"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+        Cal.ns["xc-flow-camp"]("ui", {"theme":"dark","cssVarsPerTheme":{"dark":{"cal-brand":"#ffffff"}},"hideEventTypeDetails":false,"layout":"month_view"});
       </script>
       <!-- Cal inline embed code ends -->
 
