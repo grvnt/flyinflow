@@ -21,15 +21,11 @@
   .cal-block p.note { text-align: center; margin: 0 0 20px; }
   .camp-card { text-align: center; }
   .camp-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-  .group-text h2 { text-align: left; }
-  .group-text .intro-text { text-align: justify; max-width: none; margin: 0 0 20px; }
-  .group-text .cal-block .note { text-align: left; }
-  .group-photo img {
+  .group-photo {
     width: 100%;
-    height: 100%;
-    min-height: 260px;
-    object-fit: cover;
+    max-width: 600px;
     border-radius: 8px;
+    margin: 32px auto;
     display: block;
   }
   iframe.camp-embed {
@@ -57,18 +53,14 @@
   </section>
 
   <section class="bg-a no-border">
-    <div class="wrap two-col">
-      <div class="group-text">
-        <h2>Built Around Your Group</h2>
-        <p class="intro-text">Multi-day XC courses and package deals are priced by application &mdash; the right length and rate depend on your group size and goals. Message Grant directly on WhatsApp to talk through your dates. Need a single day instead? <a href="/birdmen-intake">Book a standard guiding day here.</a></p>
-        <div class="cal-block" style="margin-top:40px;">
-          <h2>Talk Through Your Dates</h2>
-          <p class="note">Multi-day packages are built around your group, so it starts with a conversation &mdash; message Grant on WhatsApp with your rough dates and group size.</p>
-          <a class="cta" href="https://wa.me/27792708597?text=Hi%20Grant%2C%20I%27d%20like%20to%20ask%20about%20a%20multi-day%20XC%20course%20%2F%20group%20package." target="_blank" rel="noopener">Message Grant on WhatsApp →</a>
-        </div>
-      </div>
-      <div class="group-photo">
-        <img src="/xc-flow-camp.jpg" alt="XC Flow Camp" />
+    <div class="wrap">
+      <h2>Built Around Your Group</h2>
+      <p class="intro-text">Multi-day XC courses and package deals are priced by application &mdash; the right length and rate depend on your group size and goals. Message Grant directly on WhatsApp to talk through your dates. Need a single day instead? <a href="/birdmen-intake">Book a standard guiding day here.</a></p>
+      <img class="group-photo" src="/xc-flow-camp.jpg" alt="XC Flow Camp" />
+      <div class="cal-block" style="text-align:center;">
+        <h2>Talk Through Your Dates</h2>
+        <p class="note">Multi-day packages are built around your group, so it starts with a conversation &mdash; message Grant on WhatsApp with your rough dates and group size.</p>
+        <a class="cta" href="https://wa.me/27792708597?text=Hi%20Grant%2C%20I%27d%20like%20to%20ask%20about%20a%20multi-day%20XC%20course%20%2F%20group%20package." target="_blank" rel="noopener">Message Grant on WhatsApp →</a>
       </div>
     </div>
   </section>
