@@ -11,6 +11,11 @@
       "source": "/fly100",
       "destination": "https://fly100.kit.com/b7904fde1f",
       "permanent": false
+    },
+    {
+      "source": "/feedback",
+      "destination": "https://tally.so/r/KpplY7",
+      "permanent": true
     }
   ]
 }
