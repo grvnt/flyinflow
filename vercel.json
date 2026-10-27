@@ -14,7 +14,7 @@
     },
     {
       "source": "/feedback",
-      "destination": "https://tally.so/r/KpplY7",
+      "destination": "/birdmen-feedback",
       "permanent": true
     }
   ]
